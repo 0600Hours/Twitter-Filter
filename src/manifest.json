@@ -1,12 +1,18 @@
 {
   "name": "Twitter Filter",
-  "version": "0.0.6",
+  "version": "0.0.13",
   "description": "Filter out obnoxious Twitter posts.",
-  "permissions": ["activeTab"],
+  "permissions": [
+    "activeTab"
+  ],
   "options_page": "options.html",
   "content_scripts": [
     {
-      "matches": ["http://*.twitter.com/*", "https://*.twitter.com/*"],
+      "matches": [
+        "http://*.twitter.com/*",
+        "https://*.twitter.com/*"
+      ],
+      "run_at": "document_end",
       "js": [
         "jquery-3.5.1.min.js",
         "contentScript.js"
