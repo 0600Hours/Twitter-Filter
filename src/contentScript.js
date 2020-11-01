@@ -1,1 +1,1 @@
-alert("this should only load on twitter i hope")
+$("body").css("border", "1px solid red");
